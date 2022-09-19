@@ -1,0 +1,331 @@
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --coffee: #250d0c;
+  --light-yellow: #c5aa74;
+
+  --font-size: 62.5%;
+
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-family-montserrat: 'Montserrat', sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+::selection {
+  background: var(--blue);
+  color: var(--white);
+  text-shadow: none;
+}
+
+::-moz-selection {
+  background: var(--blue);
+  color: var(--white);
+  text-shadow: none;
+}
+
+html {
+  margin: 0px;
+  padding: 0px;
+  font-size: var(--font-size);
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family-montserrat);
+  font-size: 1.6rem;
+  line-height: normal;
+  color: var(--gray);
+  font-weight: 500;
+  background: var(--black);
+  overflow-x: hidden;
+}
+
+img {
+  vertical-align: top;
+}
+
+a {
+  color: var(--blue);
+  outline: none;
+  cursor: pointer;
+  border: 0px;
+  text-decoration: none;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  box-shadow: none;
+}
+
+a:active,
+a:hover,
+a:focus,
+a:visited {
+  text-decoration: none;
+  outline: none;
+  border: 0px;
+  box-shadow: none;
+  color: var(--blue);
+}
+
+a:focus {
+  text-decoration: none;
+}
+
+input,
+button,
+button:focus,
+input[type="button"]:focus,
+input[type="reset"]:focus,
+input[type="submit"]:focus,
+textarea {
+  font-family: var(--font-family-montserrat);
+  outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-family-montserrat);
+  margin: 0px;
+  padding: 0px;
+  line-height: normal;
+  text-transform: initial;
+  letter-spacing: 0px;
+  font-weight: 100;
+}
+
+ul,
+li,
+ol {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+  font-weight: 500;
+}
+
+figure {
+  margin: 0px;
+}
+
+.fullscreen {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fullscreen-details {
+  width: calc(100% - 60px);
+  height: calc(100% - 60px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 27.5%;
+  margin: 0px auto;
+}
+
+.slick-list,
+.slick-track {
+  height: 100%;
+}
+.slick-prev, .slick-next{
+  background:#000000;
+  color: #ffffff;
+  width: 2.5vw;
+  height: 2.5vw;
+  border-radius: 100%;
+  box-shadow: 0px 0px 2px #ffffff;
+}
+
+.slick-prev {
+  left: 10vw;
+  z-index: 1;
+}
+.slick-next {
+  right: 10vh;
+  z-index: 1;
+}
+.slick-prev:hover, .slick-prev:focus, .slick-next:hover, .slick-next:focus{
+  background:#000000;
+}
+.slick-prev:before, .slick-next:before{
+    font-family: "bootstrap-icons";
+}
+.slick-prev:before{
+  content: "\f12c";
+}
+.slick-next:before{
+  content: "\f135";
+}
+.brand-slider {
+  height: 100%;
+  margin: 0px auto;
+  position: relative;
+
+}
+
+.brand-slider .slider-item:after {
+  width: 396px;
+  height: 765px;
+  margin: 0px auto;
+  display: inline-block;
+  content: "";
+  background: url(../images/mobile-frame.png) no-repeat center top;
+  background-size: 100% auto;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+
+}
+
+.brand-slider .slider-item {
+  color: #fff;
+  width: 24%;
+  margin: 0px auto;
+  position: relative;
+  z-index: 2;
+}
+
+.brand-slider .slider-item .slider-item-bg {
+  width: 340px;
+  height: 724px;
+  padding: 20px;
+  margin: 0px auto;
+  background-size: 100% 100%;
+  border-radius: 3rem;
+  text-align: center;
+  object-fit: cover;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.brand-slider .slider-item .slider-item-bg1 {
+  background: url(../images/mobile-bg.jpg) no-repeat center bottom;
+}
+
+.brand-slider .slider-item .slider-item-bg2 {
+  background: url(../images/whiskas-bg.jpg) no-repeat center bottom;
+}
+
+.brand-slider .slider-item .slider-item-bg3 {
+  background: url(../images/nivea-bg.jpg) no-repeat center bottom;
+}
+
+.brand-slider .slider-item .slider-item-bg4 {
+  background: url(../images/everyday-bg.jpg) no-repeat center bottom;
+}
+
+.brand-slider .slider-item .slider-item-bg5 {
+  background: url(../images/freshpak-bg.jpg) no-repeat center bottom;
+}
+
+.brand-slider .slider-item .slider-item-bg6 {
+  background: url(../images/nivea-boys-bg.jpg) no-repeat center bottom;
+}
+
+.brand-slider .slider-item .slider-item-bg7 {
+  background: url(../images/nesquik-bg.jpg) no-repeat center bottom;
+}
+
+.brand-slider .slider-item .slider-item-bg8 {
+  background: url(../images/mars-bg.jpg) no-repeat center bottom;
+}
+
+.brand-slider .slider-item .slider-item-bg9 {
+  background: url(../images/granola-bg.jpg) no-repeat center bottom;
+}
+
+.brand-slider .slider-item .slider-item-bg10 {
+  background: url(../images/monster-energy-bg.jpg) no-repeat center bottom;
+}
+
+.brand-logo {
+  width: 85%;
+  text-align: center;
+  padding-top: 0%;
+  margin: 0px auto;
+  height: 15vh;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.brand-logo img {
+  max-width: 100%;
+  max-height: 120px;
+}
+
+.qrcode {
+  width: 100%;
+  text-align: center;
+  padding-top: 5%;
+  padding-bottom:10%;
+}
+
+.qrcode img {
+  display: inline-block;
+}
+
+.btn {
+  width: 85%;
+  background-color: var(--light-yellow);
+  color: var(--white);
+  padding: 1rem 0px;
+  font-size: 2rem;
+  border-radius: 1rem;
+  border: 1px solid #2f528f;
+}
+
+.coffee {
+  background-color: #250d0c;
+}
+.coffee .btn.coffee{ background-color:#c5aa74; color: #ffffff;}
+.whiskas{ background-color: #a22786; }
+.whiskas .btn.whiskas{background-color: #f6c65c; color:#58164b;}
+.nivea {background-color: #252865;}
+.nivea .btn.nivea{ background-color: #eeae22; color: #584a54;}
+.everyday {background-color: #1ea3bc;}
+.everyday .btn.everyday{ background-color: #ffffff; color: #cb2127;}
+.freshpak {background-color: #f4ca3b;}
+.freshpak .btn.freshpak{ background-color: #ccbe7e; color: #325f3b;}
+.nivea-boys {background-color: #252865;}
+.nivea-boys .btn.nivea-boys{ background-color: #d0d3d6; color: #252865;}
+.nesquik {background-color: #f6e63b;}
+.nesquik .btn.nesquik{  background-color: #97d2eb; color: #292e7f;}
+.mars {background-color: #010101;}
+.mars .btn.mars{  background-color: #de2627; color: #ffffff;}
+.granola {background-color: #f2eeee;}
+.granola .btn.granola{  background-color: #db4563; color: #ffffff;}
+.monster {background-color: #0a0a0a;}
+.monster .btn.monster{  background-color: #a0c51f; color: #ffffff;}
+

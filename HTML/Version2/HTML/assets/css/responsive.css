@@ -1,0 +1,25 @@
+@media only screen and (max-width: 767px) {
+    .fullscreen-details {
+        width: calc(100% - 0px);
+        height: calc(100% - 0px);
+    }
+
+    .brand-slider {
+        padding: 0px;
+        border-radius: 0px;
+        padding: 0px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .brand-slider:before {
+        display: none;
+    }
+
+    .brand-slider .slider-item .slider-item-bg {
+        border-radius: 0px;
+        width: 100%;
+        height: 100%;
+    }
+
+}
